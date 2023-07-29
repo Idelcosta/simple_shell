@@ -11,7 +11,8 @@ int main(int ac, char **argv)
 {
     char *string = NULL, *string_copy = NULL, *arguments;
     int i, status, string_length, arguments_count = 0;
-    size_t n = 0, number_character;
+    size_t n = 0;
+    ssize_t number_character;
     pid_t child_pid;
     (void)ac;
 
