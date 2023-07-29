@@ -15,9 +15,9 @@ void execution_command(char **argv)
                 actual_command = get_location(command);
 
                 if (execve(actual_command, argv, NULL) == -1)
-        {
+                {
                 perror("hsh: No such file or directory\n");
-        }
+                }
 
         }
 
